@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Cosmic Gravity Drawer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Controls Header -->
+  <header class="hud-panel">
+    <button class="hud-btn" id="btnSpawnHeart">❤️ Drop Heart</button>
+    <button class="hud-btn" id="btnBrush">🎨 Brush: Neon</button>
+    <button class="hud-btn" id="btnToggleGravity">🌌 Gravity: Normal</button>
+    <button class="hud-btn" id="btnToggleBlackHole">🕳️ Black Hole</button>
+    <button class="hud-btn" id="btnToggleAudio">🔊 Sound: Off</button>
+    <button class="hud-btn" id="btnClear">✨ Clear All</button>
+  </header>
+
+  <!-- Hint -->
+  <div class="hud-hint">
+    Draw on space • Drag to move & fling • Click Brush to change style
+  </div>
+
+  <!-- Fullscreen Canvas -->
+  <canvas id="spaceCanvas"></canvas>
+
+  <!-- Scripts in dependency order -->
+  <script src="constants.js"></script>
+  <script src="audio.js"></script>
+  <script src="particles.js"></script>
+  <script src="brushes.js"></script>
+  <script src="shape.js"></script>
+  <script src="physics.js"></script>
+  <script src="anomaly.js"></script>
+  <script src="controls.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
